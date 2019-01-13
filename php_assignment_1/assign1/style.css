@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#a{
+
+	margin-left:30px;
+	margin-bottom : 70px;
+	font-size: 50px;
+		
+}
+
+h1{
+color: purple;
+text-align:center;
+border-style: dotted;
+border-color: navy;
+font-family: Arial;
+font-size: 200%;
+
+
+}
+
+p{
+color: blue;
+font-family: verdana;
+font-size: 100%;
+
+
+}
+body{
+	
+	background: radial-gradient(circle, LightGreen, Turquoise, GreenYellow);
+}
+</style>
+</head>
+
+<body>
+
+
+<h1>This is a heading</h1>
+<p>paragraph</p>
+
+
+</body>
+</html>
