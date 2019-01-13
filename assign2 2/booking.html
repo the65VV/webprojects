@@ -1,0 +1,51 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+<head>
+<title> Task 1- Booking Page</title>
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "bookingConfirm.js"></script>
+<meta http-equiv="Content-Type" content = "text/html; charset=utf-8"/>
+<link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+<h1> Cabs Online - A Taxi Booking System </h1>
+
+<p>Book your taxi here, by simply entering your details below:</p>
+
+<form>
+
+<label>Customer Name:</label> <input type = "text"  name = "customerName"  required ="required"><br>
+
+<label>Contact Number: </label><input type = "text" name = "phone" pattern= "[0-9]+" required="required"><br>
+
+<label>Destination: </label><input type = "text"  name = "destination" placeholder="EG: 11 Uptown Dr Mt Eden "required="required"><br>
+
+<label>Pick up Date:</label><input type = "date" name = "date" value="2018-05-29"  required="required"><br>
+<label>Pick Up Time:</label> <input id = "time" type = "time" name = "time" value = "00:00"><br>
+
+<fieldset>
+<legend>Pick Up Location</legend>
+<label>Unit Number:</label><input type = "text" name = "unitNum" placeholder="Example: Digits Only" pattern= "[0-9]+" required="required"><br>
+<label>Street Name</label> <input type = "text" name = "streetName" required = "required"><br>
+<label>Suburb</label> <input type = "text" name = "suburb" required = "required"><br>
+</fieldset>
+
+
+<input type = "button" value = "Book" name = "Book" onclick="booking('bookingConfirm.php','confirm',customerName.value,phone.value,destination.value,date.value,time.value,unitNum.value,streetName.value,suburb.value)">
+
+<input type = "reset"  name = "Reset" value = "Reset">
+
+</form>
+
+
+
+</body>
+
+<div id ="confirm">
+<p></p>
+</div>
+
+
+
+</HTML>

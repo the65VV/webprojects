@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#b{
+
+	margin-left:30px;
+	margin-bottom : 70px;
+	font-size: 50px;
+		
+}
+
+
+
+h1{
+color: brown;
+text-align:center;
+font-family: calibri;
+font-size: 300%;
+
+
+}
+
+p{
+color: gr;
+font-family: Arial;
+font-size: 100%;
+
+
+}
+body{
+	
+	background-image: url("image.jpg");
+	
+}
+</style>
+</head>
+
+<body>
+
+
+<h1>This is a heading</h1>
+<p>paragraph</p>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+//create Table query
+			
+$sql = "CREATE Table CabsOnline (
+		
+BookingNumber INT(6) AUTO_INCREMENT,
+CustomerName VARCHAR(60) NOT NULL,
+ContactNumber INT(15) NOT NULL,
+Destination VARCHAR(100) NOT NULL,
+BookingDateTime DateTime NOT NULL,
+PickUp VARCHAR(100) NOT NULL,
+BookingStatus VARCHAR (30),
+PRIMARY KEY(BookingNumber)
+				
+)";
+				
+if($conn->query($sql)==TRUE){
+					
+	echo "Table created";
+}
+	else{
+	echo "error creating Table" . $conn->error;
+	echo "<br>";
+}
+		

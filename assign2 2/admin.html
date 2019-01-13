@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Task 2- Admin Page</title>
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "admin.js"></script>
+<meta http-equiv="Content-Type" content = "text/html; charset=utf-8"/>
+<link rel = "stylesheet" href = "style.css">
+
+
+</head>
+
+<body>
+
+<h1> Manage Bookings </h1>
+
+<fieldset>
+<form>
+
+<!--<label>Show all Taxi Booking Requests:</label><br>
+<input type = "button" value = "Search" name = "Search" onclick= "getDate('admin.php','confirmation',date.value)"><br>
+-->
+
+<label> Show Pick Up Requests within 2 hours: </label> <br>
+<input type = "button" value = "Search" name = "Search" onclick = "getData('admin.php','confirmation')"><br>
+
+<!-- Search & Assign through Booking Reference-->
+Search Through Booking Number: <input type = "text" name = "bookingNumber" id = 'userInput'><br>
+
+<input type = "button" value = "AssignTaxi" name = "Assign" onclick= "getBooking('adminSearch.php', 'confirmation')"><br>
+
+
+</form>
+</fieldset>
+
+<div id = "confirmation">
+<p></p>
+</div>
+
+
+</body>
+</html>
